@@ -13,8 +13,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js'
   },
-  target: 'node', // update from 23.12.2018
-  externals: [nodeExternals()], // update from 23.12.2018
   module: {
     rules: [
       {
@@ -40,8 +38,7 @@ module.exports = {
       filename: 'style.css',
     }),
     new HtmlWebpackPlugin({
-        inject: false,
-        hash: true,
+        inject: 'body',
         template: './src/index.html',
         filename: 'index.html'
       })
