@@ -1,0 +1,20 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: $off-white;
+
+    .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        .item {
+            padding: 0 20px;
+            font-family: $font-family;
+            font-weight: 600;
+            font-size: $font-size-small;
+            color: $grey-7;
+            letter-spacing: .05em;
+        }
+    }
+}

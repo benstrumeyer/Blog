@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router';
-import { Home } from './components/Home';
-import { BrowserRouter as Router } from 'react-router-dom';
-import './appStyles.scss'
+import { Header } from './components/Header';
+import { Main } from './components/Main';
+import './sass/main.scss'
 
 export default class App extends Component {
 
   render() {
     return (
-      <Router>
-        <Route exact path='/' component={Home} />
-      </Router>
+      <div>
+        <Header/>
+        <Main/>
+      </div>
     );
   }
 }
