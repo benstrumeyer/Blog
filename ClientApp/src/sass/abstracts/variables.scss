@@ -1,0 +1,100 @@
+// Colors
+
+$white: #fff;
+$off-white: #fefefe;
+$dark-blue: #173F5F;
+$blue:  #20639B;
+$green:  #3CAEA3;
+$yellow:  #F6D55C;
+$red:  #ED553B;
+$black:  #0F0F0F;
+
+$blue-7: darken($blue, 60%);
+$blue-6: darken($blue, 40%);
+$blue-5: darken($blue, 20%);
+$blue-4: $blue;
+$blue-3: lighten($blue, 20%);
+$blue-2: lighten($blue, 40%);
+$blue-1: lighten($blue, 60%);
+
+$dark-blue-7: darken($dark-blue, 60%);
+$dark-blue-6: darken($dark-blue, 40%);
+$dark-blue-5: darken($dark-blue, 20%);
+$dark-blue-4: $dark-blue;
+$dark-blue-3: lighten($dark-blue, 20%);
+$dark-blue-2: lighten($dark-blue, 40%);
+$dark-blue-1: lighten($dark-blue, 60%);
+
+$green-7: darken($green, 60%);
+$green-6: darken($green, 40%);
+$green-5: darken($green, 20%);
+$green-4: $green;
+$green-3: lighten($green, 20%);
+$green-2: lighten($green, 40%);
+$green-1: lighten($green, 60%);
+
+$red-7: darken($red, 60%);
+$red-6: darken($red, 40%);
+$red-5: darken($red, 20%);
+$red-4: $red;
+$red-3: lighten($red, 20%);
+$red-2: lighten($red, 40%);
+$red-1: lighten($red, 60%);
+
+$yellow-7: darken($yellow, 60%);
+$yellow-6: darken($yellow, 40%);
+$yellow-5: darken($yellow, 20%);
+$yellow-4: $yellow;
+$yellow-3: lighten($yellow, 20%);
+$yellow-2: lighten($yellow, 40%);
+$yellow-1: lighten($yellow, 60%);
+
+$grey-10: #21252A;
+$grey-9: #343A40;
+$grey-8: #495057;
+$grey-7: #868E96;
+$grey-6: #ADB5BD;
+$grey-5: #CFD4DA;
+$grey-4: #DEE2E6;
+$grey-3: #E9ECEE;
+$grey-2: #F1F3F5;
+$grey-1: #F8F9FA;
+
+$color-primary: $blue;
+$color-secondary: $green;
+$color-tertiary: $yellow;
+
+// Background
+$color-primary-background: $off-white;
+
+// Font
+$font-size-small: 13px;
+$font-size-medium: 23px;
+$font-size-large: 30px;
+
+$font-size-title: $font-size-medium;
+
+$font-family: "Raleway",sans-serif;
+$base-font-color: $black;
+
+// Border
+$border-radius-base: 2px;
+$border-radius-round: 50%;
+$color-border: $grey;
+$color-border-panel: $color-border;
+
+// Box Shadow
+$box-shadow: 0 2px 20px 2px rgba(0,0,0,0.1);
+
+// Icons
+$color-icon: $color-primary;
+
+// Buttons
+$color-button-background: $color-primary;
+$color-button-text: $white;
+
+// Breakpoints
+$break-small: 768px;
+$break-medium: 992px;
+$break-large: 1200px;
+$break-extra-large: 1500px;
