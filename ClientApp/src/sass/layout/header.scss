@@ -2,12 +2,16 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 0 20px;
     background-color: $off-white;
 
     .navbar {
         display: flex;
         justify-content: space-evenly;
+        padding: 0;
+        li {
+            list-style-type: none;
+        }
         .item {
             padding: 0 20px;
             font-family: $font-family;
@@ -15,6 +19,14 @@
             font-size: $font-size-small;
             color: $grey-7;
             letter-spacing: .05em;
+            list-style-type: none;
+            text-decoration: none;
+            &:visited {
+                color:  $grey-7;
+            }
+            &:hover {
+                color: $grey-10;
+            }
         }
     }
 }
