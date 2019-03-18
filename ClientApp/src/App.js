@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import { Route } from 'react-router';
-import { Header } from './components/Header';
-import { Main } from './components/Main';
-import './sass/main.scss'
+import React from 'react'
+import Nav from './Nav'
+import Main from './components/Main'
 
-export default class App extends Component {
-
-  render() {
+export default function App({ emails }) {
     return (
-      <div>
-        <Header/>
-        <Main/>
-      </div>
-    );
-  }
+        <div className="mail-client">
+            <aside>
+                <Nav/>
+            </aside>
+
+            <main>
+                <Main emails={emails} />
+            </main>
+        </div>
+    )
 }

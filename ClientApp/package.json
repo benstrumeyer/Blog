@@ -3,17 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^3.9.2",
-    "@material-ui/icons": "^3.0.2",
     "bootstrap": "^3.3.7",
+    "node": "^6.11.5",
     "prop-types": "^15.7.2",
-    "react": "^16.8.4",
+    "react": "16.4.2",
     "react-bootstrap": "^0.31.5",
-    "react-dom": "^16.0.0",
-    "react-router-bootstrap": "^0.24.4",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.17",
-    "rimraf": "^2.6.2"
+    "react-dom": "16.4.2",
+    "react-md": "^1.9.3",
+    "react-router5": "6.3.0",
+    "react-scripts": "1.1.4",
+    "rimraf": "^2.6.2",
+    "router5": "6.4.2",
+    "router5-plugin-browser": "^7.0.2"
   },
   "scripts": {
     "build": "webpack --mode production",
@@ -31,7 +32,7 @@
     "sass": "*",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
-    "webpack": "^4.5.0",
+    "webpack": "^4.29.6",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.1",
     "webpack-node-externals": "^1.7.2"

@@ -1,7 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { BrowserRouter as Router } from 'react-router-dom';
+import ReactDOM from 'react-dom'
+import React from 'react'
+import App from './App'
+import { RouterProvider } from 'react-router5'
+import createRouter from './create-router'
+import browserPlugin from 'router5-plugin-browser'
+import emails from './emails'
 
-const app = document.getElementById("app");
-ReactDOM.render(<Router><App/></Router>, app);
+const router = createRouter(true);
+router.usePlugin(browserPlugin());
+
+router.start(() => {
+    ReactDOM.render((
+        <RouterProvider router={router}>
+            <App emails={emails}/>
+        </RouterProvider>
+    ), document.getElementById('app'))
+})

@@ -1,9 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react'
+import { routeNode } from 'react-router5'
+import { About } from './About'
 
-export class Main extends Component {
-  render() {
-      return (
-        <div></div>
-      );
-  }
+
+function Main({ route, emails }) {
+    const topRouteName = route.name.split('.')[0]
+
+    if (topRouteName === 'home') {
+        return <About/>
+    }
+
+
+    return <div>tast</div>
 }
+
+export default routeNode('')(Main)
