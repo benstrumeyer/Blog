@@ -1,17 +1,25 @@
-@import '~react-md/src/scss/react-md';
+.test {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
 
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
+// @import '../../node_modules/react-md/src/scss/_react-md.scss';
+// @import 'vendors/react-md-overrides';
 
-@import 'base/reset';
-@import 'base/typography';
 
-@import 'layout/navigation';
-@import 'layout/header';
-@import 'layout/footer';
+// @import 'abstracts/variables';
+// @import 'abstracts/mixins';
 
-@import 'components/buttons';
+// @import 'base/reset';
+// @import 'base/typography';
 
-@import 'pages/home';
+// @import 'layout/navigation';
+// @import 'layout/header';
+// @import 'layout/footer';
 
-@include react-md-everything;
+// @import 'components/buttons';
+
+// @import 'pages/home';
+
+// @include react-md-everything;

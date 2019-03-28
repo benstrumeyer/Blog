@@ -14,5 +14,9 @@ router.start(() => {
         <RouterProvider router={router}>
             <App emails={emails}/>
         </RouterProvider>
-    ), document.getElementById('app'))
+    ), document.getElementById('root'))
 })
+
+if (module.hot) {
+    module.hot.accept();
+  }
