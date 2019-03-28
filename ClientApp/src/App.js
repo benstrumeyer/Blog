@@ -5,15 +5,14 @@ import './sass/main.scss';
 
 export default function App({ emails }) {
     return (
-        <div className='test'>hey</div>
-        // <div className="mail-client">
-        //     <aside>
-        //         <Nav/>
-        //     </aside>
+         <div className="mail-client">
+             <aside>
+                 <Nav/>
+             </aside>
 
-        //     <main>
-        //         <Main emails={emails} />
-        //     </main>
-        // </div>
+             <main>
+                 <Main emails={emails} />
+             </main>
+         </div>
     )
 }
