@@ -13,7 +13,7 @@ import { FontIcon, ListItem } from 'react-md';
 const NavItemLink = ({ routeName, router, routeOptions, label }) => {
       return (
         <ListItem
-          primaryText={'test'}
+          primaryText={routeName}
         />
       );
     };

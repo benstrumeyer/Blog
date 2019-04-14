@@ -4,8 +4,9 @@ import { Drawer, Button, Toolbar } from 'react-md';
 import { withRoute, Link} from 'react-router5';
 import NavItemLink from './NavItemLink';
 import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import Navbar from './Navbar';;
 
-class Nav extends PureComponent {
+class Navigation extends PureComponent {
     
     constructor(props) {
         super(props);
@@ -57,7 +58,7 @@ class Nav extends PureComponent {
         
         return (
           <div>
-          <Toolbar colored fixed title="Routing Example" nav={<Button icon onClick={this.showDrawer}>menu</Button>} />
+          <Toolbar fixed nav={<Navbar showDrawer={this.showDrawer}/>} />
           <CSSTransitionGroup
             component="div"
             transitionName="md-cross-fade"
@@ -71,13 +72,13 @@ class Nav extends PureComponent {
             visible={this.state.visible}
             position={this.state.position}
             onVisibilityChange={this.handleVisibility}
-            header={<Toolbar title={'Drawer Example'} />}
+            header={<Toolbar title={'Ben Strumeyer\'s Blog'} />}
             renderNode={this.dialog}
             navItems={navItems.map(props => <NavItemLink {...props} key={props.routeName} />)}
           />
         </div> 
         );
-    }
+}
 }
 
-export default withRoute(Nav)
+export default withRoute(Navigation)

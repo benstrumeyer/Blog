@@ -1,0 +1,18 @@
+// Font
+$font-size-small: 15px;
+$font-size-medium: 23px;
+$font-size-large: 30px;
+
+$font-family: "Raleway",sans-serif;
+$base-font-color: $black;
+
+
+.nav-title {
+    font-family: $font-family;
+    font-weight: 600;
+    font-size: $font-size-small;
+    color: $grey-7;
+    letter-spacing: .05em;
+    list-style-type: none;
+    text-decoration: none;
+}

@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    span {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    .icon-links {
+        margin-right: 30px;
+    }
+}
