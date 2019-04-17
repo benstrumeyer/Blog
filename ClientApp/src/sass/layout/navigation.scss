@@ -8,11 +8,27 @@
         flex-direction: row;
         align-items: center;
     }
-    .menu {
-        display: inline-block;
-        margin-left: 10px;
-    }
     .icon-links {
-        margin-right: 30px;
+        margin-right: 1vw;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+            position: relative;
+            top: 50%;
+            transform: translateY(-17%);
+        }
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+            position: relative; 
+            top: 50%;
+            transform: translateY(-5%);
+        }
     }
 }

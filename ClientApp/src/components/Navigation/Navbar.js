@@ -26,8 +26,12 @@ const Navbar = ({ showDrawer }) => {
             </span>
             <span>Image</span>
             <span className="icon-links">
-                <FontIcon iconClassName="fa fa-github" className="icon icon-link"></FontIcon>
-                <FontIcon iconClassName="fa fa-envelope" className="icon icon-link"></FontIcon>
+                <Button icon href="https://github.com/benstrumeyer">
+                    <FontIcon iconClassName="fa fa-github" className="icon icon-link"></FontIcon>
+                </Button>
+                <Button icon>
+                    <FontIcon iconClassName="fa fa-envelope" className="icon icon-link"></FontIcon>
+                </Button>
             </span>
           </div>
       );
