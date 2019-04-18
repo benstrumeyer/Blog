@@ -1,0 +1,10 @@
+    button {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        .icon {
+            position: relative;
+            top: 50%;
+            transform: translateY(-17%);
+        }
+    }
